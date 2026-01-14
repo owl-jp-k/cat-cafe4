@@ -259,12 +259,28 @@ body {
 <!-- =========================================
      予約ボタン画像
 ========================================= -->
+<a href="reservation.html" class="reserve-button">ご予約はこちら</a>
 <div class="reserve container section">
   <img 
     src="https://github.com/owl-jp-k/cat-cafe4/blob/main/images/btn-reserve.png?raw=1"
     alt="予約はこちらのボタン"
   >
 </div>
+
+.reserve-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #ff8c94;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.reserve-button:hover {
+  background-color: #ff6f78;
+}
 
 </body>
 </html>
