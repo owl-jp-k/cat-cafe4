@@ -160,6 +160,20 @@ body {
   margin-top: 30px;
 }
 
+ /* ←←← この下に追加する */
+
+  /* ------------------------------
+     予約ボタン（クリックできる演出）
+  --------------------------------*/
+  .reserve a img {
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .reserve a img:hover {
+    transform: scale(1.03);
+  }
+   
 </style>
 </head>
 
@@ -174,7 +188,7 @@ body {
     alt="猫カフェのメインビジュアル"
   >
   <div class="hero-title">
-    <h1>猫カフェ みにふに</h1>
+    <h1>猫カフェ ふにふに</h1>
   </div>
 </div>
 
@@ -259,28 +273,15 @@ body {
 <!-- =========================================
      予約ボタン画像
 ========================================= -->
-<a href="reservation.html" class="reserve-button">ご予約はこちら</a>
 <div class="reserve container section">
-  <img 
-    src="https://github.com/owl-jp-k/cat-cafe4/blob/main/images/btn-reserve.png?raw=1"
-    alt="予約はこちらのボタン"
-  >
+  <a href="reservation.html">
+    <img 
+      src="https://github.com/owl-jp-k/cat-cafe4/blob/main/images/btn-reserve.png?raw=1"
+      alt="予約はこちらのボタン"
+    >
+  </a>
 </div>
 
-.reserve-button {
-  display: inline-block;
-  padding: 12px 20px;
-  background-color: #ff8c94;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.reserve-button:hover {
-  background-color: #ff6f78;
-}
 
 </body>
 </html>
